@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #E7E7E7FF;
+    font-family: arial;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+}
+
+.icon-user {
+    position: relative;
+    float: right;
+    top: 25px;
+    right: 30px;
+}
+
+.icon-user .fas {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    background: #3A6EFFFF;
+}
+
+#tag-menu {
+    display: none;
+}
+
+#tag-menu:checked~.drop-icon-user ul {
+    animation: slide-in 0.5s ease;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+.drop-icon-user ul {
+    display: none;
+}
+
+.drop-icon-user ul {
+    top: 40px;
+    right: -10px;
+    position: absolute;
+    width: 150px;
+    height: 109px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    list-style: none;
+
+}
+
+hr {
+    margin-top: 8px;
+    background-color: #e9ecef;
+    height: 0, 1px;
+}
+
+.drop-icon-user ul li {
+    padding: 10px 20px;
+    margin-top: 7px;
+}
+
+.drop-icon-user ul li:hover {
+    background-color: #e9ecef;
+}
+
+.drop-icon-user ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper-content {
+    display: flex;
+}
+
+.wrapper-sidebar {
+    width: 90px;
+    height: 100%;
+    float: left;
+    position: fixed;
+
+}
+
+.sidebar {
+    position: fixed;
+    width: 90px;
+    height: 100%;
+    background-color: #212529;
+    float: left;
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: static;
+    margin-left: 90px;
+}
+
+.box-up {
+    width: 98%;
+    height: 50px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 12px auto;
+}
+
+.box-up span {
+    position: relative;
+    font-size: 1rem;
+    top: 15px;
+    left: 20px;
+    font-family: arial;
+    color: #6c757d;
+}
+
+.admin {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    margin-left: 20px;
+}
+
+.btn {
+    width: 90px;
+    height: 70px;
+    background-color: #212529;
+    border: none;
+    border-bottom: 1px solid #666666FF;
+    color: white;
+    cursor: pointer;
+    outline-color: #3A3A3AFF;
+}
+
+span {
+    font-size: 0.65rem;
+    display: block;
+    margin-top: 5px;
+    font-family: Font Awesome 5 Free;
+}
+
+i {
+    font-size: 20px;
+}
+
+.btnt {
+    width: 90px;
+    height: 70px;
+    background-color: #212529;
+    border: none;
+    border-bottom: 1px solid #666666FF;
+    color: white;
+    cursor: pointer;
+    outline-color: #2D2D2DFF;
+}
+
+.btnn {
+    width: 90px;
+    height: 70px;
+    background-color: #212529;
+    border: none;
+    border-bottom: 1px solid #666666FF;
+    color: white;
+    cursor: pointer;
+    outline-color: #595959FF;
+}
+
+.btn:hover {
+    background: #595959FF;
+}
+
+.btnn:hover {
+    background: #353535FF;
+}
+
+#tag-pembayaran {
+    display: none;
+}
+
+#tag-pembayaran:checked~div.tag-slide {
+    animation: slide-in 0.5s none;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+.tag-slide {
+    position: absolute;
+    width: 180px;
+    height: 209px;
+    background-color: white;
+    left: 100px;
+    top: 75px;
+    border-radius: 4px;
+    animation: slide-out 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    display: none;
+}
+
+.tag-slide ul {
+    list-style: none;
+    top: 40px;
+    right: -10px;
+}
+
+.tag-slide ul li {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 9px;
+}
+
+hr {
+    margin-top: 8px;
+    background-color: #e9ecef;
+    height: 0, 1px;
+}
+
+.tag-slide ul li:hover {
+    background-color: #e9ecef;
+}
+
+.tag-slide ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    margin-left: 90px;
+    width: calc(100% - 90px);
+    height: 80px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #e9ecef;
+}
+
+.footer .text-end {
+    margin: 25px auto;
+}
+
+.footer .text-end span {
+    font-size: 12px;
+}
